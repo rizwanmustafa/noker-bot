@@ -1,0 +1,4 @@
+{
+  "token": "Your super secret token!",
+  "commandPrefix": "The command prefix you want to use e.g ! or ~"
+}

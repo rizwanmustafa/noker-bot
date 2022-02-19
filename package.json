@@ -8,12 +8,13 @@
   "private": "true",
   "scripts": {
     "lint": "cd src && yarn run eslint \"**/*.{ts,tsx}\"",
-    "dev": "yarn run lint && cd src && nodemon index.ts",
     "compile": "tsc --build",
-    "build": "yarn run lint && yarn run compile && cd build && node index.js",
+    "dev": "yarn run lint && yarn run compile && cd build && node index.js",
     "prepare": "husky install"
   },
   "dependencies": {
+    "@discordjs/rest": "^0.3.0",
+    "discord-api-types": "^0.27.2",
     "discord.js": "^13.6.0"
   },
   "devDependencies": {
